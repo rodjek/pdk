@@ -5,7 +5,10 @@ require 'json'
 modules = [
   'puppetlabs/puppetlabs-motd',
   'puppetlabs/puppetlabs-concat',
-  'puppetlabs/puppetlabs-inifile',
+
+# temporarily disable puppetlabs-inifile testing until it has been updated to
+# work with rspec-expectations 3.8.5
+#  'puppetlabs/puppetlabs-inifile',
 ]
 
 describe 'Updating an existing module' do
